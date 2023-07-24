@@ -1,0 +1,60 @@
+/* navbar */
+*{
+    margin: 0;
+    
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+    display:flex ;
+}
+nav img{
+    width: 5rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/* header  */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+nav h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #666;
+}
+
+p {
+    text-align: center;
+}
