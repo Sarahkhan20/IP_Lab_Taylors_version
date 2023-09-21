@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Achievements</title>
+        <link rel="stylesheet" href="navbar.css" />
+        <style>
+            /* body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #f7f7f7;
+                margin: 0;
+                padding: 0;
+            } */
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #202020;
+                margin: 0;
+                padding: 0;
+                color: white;
+                 font-size: 25px;
+            text-align: left;
+            background-image: linear-gradient(to bottom right, black, #555);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+            }
+             @keyframes captionEntry {
+            from {
+                opacity: 0;
+                transform: translateX(-950px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+            .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            justify-content: center;
+            align-content: start;
+        }
+        .background-image {
+            background-image: url("https://3.bp.blogspot.com/-yVeQDf8jRig/USZ0ZtXlikI/AAAAAAAAAKY/ByIIHh2MQl8/s1600/taylorswift.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1500px;
+            height: max-content; 
+            opacity: 0.2;
+        }
+        @keyframes tableEntry {
+            from {
+                opacity: 0;
+                transform: translateX(550px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+            table {
+                width: 100%;
+                margin: 20px auto;
+                border-collapse: collapse;
+background-color: #555;
+opacity: 0.9;
+height: 30rem;
+animation: tableEntry 3s ease forwards;
+            }
+
+            th,
+            td {
+                padding: 10px;
+                border: 1px solid white;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+            }
+
+            th {
+                background-color: black;
+                /* opacity: 1; */
+                font-weight: bold;
+                font-family: "Pacifico", cursive;
+            }
+
+            caption {
+                font-size: 24px;
+                margin-bottom: 10px;
+                font-family: "Pacifico", cursive;
+                font-size: 3rem;
+                color: white;
+                opacity: 100;
+                animation: captionEntry 3s ease forwards;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                opacity: 0.5;
+            }
+
+            tfoot td {
+                font-weight: bold;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="overlay">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Logo.png" alt="" srcset="" />
+                </a>
+            </div>
+           
+            <ul>
+                <li><a href="song.html">Song</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+             <div class="background-image">
+        <table border="5px">
+            <!-- <img
+                src="https://3.bp.blogspot.com/-yVeQDf8jRig/USZ0ZtXlikI/AAAAAAAAAKY/ByIIHh2MQl8/s1600/taylorswift.gif"
+                alt=""
+                srcset=""
+                width="1000px"
+                height="500px"
+            /> -->
+            <caption>
+                Taylor Swift's Achievement
+            </caption>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Award</th>
+                    <th>Category</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2008</td>
+                    <td>Grammy Awards</td>
+                    <td>Album of the year</td>
+                    <td>Won</td>
+                </tr>
+                <tr>
+                    <td>2010</td>
+                    <td>MTV Video Music Award</td>
+                    <td>Best Female Video</td>
+                    <td>Nominated</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>Billboard Music Awards</td>
+                    <td>Top Artist</td>
+                    <td>Won</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total : 3 Achievements</td>
+                </tr>
+            </tfoot>
+        </table>
+        </div>
+        </div>
+    </body>
+    </div>
+</html>

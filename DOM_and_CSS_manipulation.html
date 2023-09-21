@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="container">
+  <div class="box">Click me!</div>
+</div>
+
+<script>
+// Create a new element using document.createElement()
+const newBox = document.createElement('div');
+newBox.className = 'box';
+newBox.textContent = 'New Box';
+document.getElementById('container').appendChild(newBox);
+
+// Use innerHTML to add content to an element
+document.getElementById('container').innerHTML += '<div class="box">Inner HTML Box</div>';
+
+// Use insertAdjacentHTML() to add content adjacent to an element
+document.getElementById('container').insertAdjacentHTML('beforeend', '<div class="box">Adjacent HTML Box</div>');
+
+// Remove an element using removeChild()
+const oldBox = document.querySelector('.box');
+oldBox.parentNode.removeChild(oldBox);
+
+// Replace an element using parentNode.replaceChild()
+const parent = document.getElementById('container');
+const newElement = document.createElement('div');
+newElement.className = 'box';
+newElement.textContent = 'Replaced Box';
+parent.replaceChild(newElement, parent.firstChild);
+
+// Manipulate CSS styles using JavaScript
+const dynamicBox = document.querySelector('.box');
+dynamicBox.style.backgroundColor = 'orange';
+dynamicBox.style.fontSize = '18px';
+
+// Using getElementById() and getElementByClassName()
+const elementById = document.getElementById('container');
+const elementsByClassName = document.getElementsByClassName('box');
+
+// Using querySelector() and querySelectorAll()
+const firstBox = document.querySelector('.box');
+const allBoxes = document.querySelectorAll('.box');
+</script>
+
+</body>
+</html>
